@@ -56,6 +56,11 @@ class BillsController < ApplicationController
     end
   end
 
+  def self.delete_old
+    @old_invoices = Bill.where('date <= ?', 2.days.ago)
+    @old_invoices.delete_all
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_bill
