@@ -1,24 +1,11 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a Ruby on Rails application which implements CRON job. For this, i used a whenever gem.
 
-Things you may want to cover:
+This app is list of bills which automatically delete the 2 days old bills for every minute.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+To start the job, run this on terminal:
+$ cd /(your directory)
+$ bundle exec wheneverize .
+$ bundle exec whenever
+$ whenever --update-crontab
