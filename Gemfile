@@ -12,7 +12,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.7'
 gem 'bootstrap'
 gem 'whenever', require: false
-
+gem 'mimemagic'
 gem 'bootsnap', '>= 1.4.4', require: false
 
 group :development, :test do
